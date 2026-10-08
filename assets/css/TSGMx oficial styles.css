@@ -1,0 +1,715 @@
+/*--=====  BODY FONT =====--*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*--=====  SECTION NAME CHEVROLET UNICARS LAB =====--*/
+
+/*--=====  LOGO TEXT UNICARS =====--*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
+
+/*--===== THE SWAP =====--*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+
+
+
+/*--===== Global Classes =====--*/
+:root {
+  --white: white;
+  --black: black;
+  --principal-color: #000f13;
+  --second-color: #001d25;
+  --dark-medium-principal-color: #6a8686;
+  --light-second-color: #5f5f5f;
+  --light-medium-principal-color: #D4D8DD;
+  --tsgmx: #EEFF00;
+
+
+  /*========== Font and typography ==========*/
+  --body-font: "Montserrat", sans-serif;
+  --the-swap: 'Dancing Script', cursive;
+  --the-swap-group:'Nico Moji';
+  --typo-text-unicars: "Big Shoulders Inline", sans-serif;
+
+  --justify-text: justify;
+  --center-text: center;
+
+  /*--===== Margin =====--*/
+  --auto: auto;
+  --px-10: 10px;
+  --px-20: 20px;
+  --px-30: 30px;
+  --px-50: 50px;
+  /*--===== Position =====--*/
+  --relative: relative;
+  --absolute: absolute;
+  --fixed: fixed;
+  --space-between: space-between;
+  --space-around: space-around;
+  --flex-start: flex-start;
+  --flex-end: flex-end;
+  --center: center;
+  --start: start;
+  --flex: flex;
+  --column: column;
+  --hidden: hidden;
+  /*===== NAV =====*/
+  --mb-4: 2rem;
+}
+
+/*--===== Responsive =====--*/
+@media screen and (max-width: 800px) {
+  :root {
+    --font-name: 2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    
+  }
+}
+
+
+/*--=====  Body =====--*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--bg-color);
+  color: var(--text-color) !important;
+  font-family: var(--body-font);
+  font-weight: 500;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--principal-color);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: var(--light-medium-principal-color);
+}
+
+.bg-color{
+  background: var(--bg-color);
+}
+/*--===== Global Sections  =====--*/
+@font-face {
+    font-family: 'Unicars'; /* Nombre que usarás en tu CSS */
+    src: url(/assets/img/Type/grandsport.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  font-weight: normal !important;
+}
+
+.font-1{
+  font-size: clamp(1.2rem, 5vw, .5rem) !important;
+
+}
+.font-1-7 {
+  font-size: clamp(1.7rem, 5vw, .5rem) !important;
+}
+
+.font-2-5 {
+  font-size: clamp(5rem, 5vw, .5rem) !important;
+}
+
+.font-3 {
+  font-size: clamp(3rem, 5vw, .5rem) !important;
+}
+
+.font-4 {
+  font-size: clamp(4rem, 5vw, .5rem) !important;
+}
+
+.font-5 {
+  font-size: clamp(5rem, 5vw, .5rem) !important;
+}
+
+.font-7 {
+  font-size: clamp(7rem, 5vw, .5rem) !important;
+}
+
+.center-t {
+  text-align: center;
+}
+
+.justify-t {
+  text-align: justify;
+}
+
+
+
+/*--===== TYPOGRAPHY AND TEXT =====--*/
+.text-color{
+  color: var(--text-color);
+}
+.nowrap {
+  text-wrap: nowrap !important;
+}
+.justify-text{
+  text-align: var(--justify-text);
+}
+.center-text{
+  text-align: var(--center-text);
+
+}
+.text-vertical{
+  text-orientation: upright;
+  writing-mode: vertical-rl; /* Escritura vertical de derecha a izquierda */
+    text-orientation: upright;
+}
+.bebas-neue-regular {
+  font-family: var(--typo-bebas-neue);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.typography-nicomoji {
+  font-family: var(--typo-nico-moji);
+  font-weight: 400;
+  font-style: normal;
+}
+.text-white{
+  color: var(--white);
+}
+.tsg-text {
+  font-family: var(--the-swap);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.tsg-text span:nth-child(2) {
+  background: linear-gradient(90deg, orange, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ts-group {
+  font-family: var(--typo-nico-moji);
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.motorsport span:nth-child(2) {
+  background: linear-gradient(rgba(94, 14, 14, 1), red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.studio span:nth-child(2) {
+  background: linear-gradient(rgb(11, 0, 73), rgb(0, 102, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+/*--===== TYPOGRAPHY AND TEXT =====--*/
+
+
+/*--===== COLORS =====--*/
+
+.colormblueone {
+  color: var(--colormblueone);
+}
+.colormbluetwo {
+  color: var(--colormbluetwo);
+}
+.colormred {
+  color: var(--colormred);
+}
+/*--===== COLORS =====--*/
+
+
+/*--===== PARAMETROS =====--*/
+
+.width {
+  width: 100%;
+}
+.width-40{
+  width: 40%;
+}
+.width-60{
+  width: 60%;
+}
+.margin {
+  margin: auto !important;
+}
+.padding-20{
+  padding: 20px;
+}
+
+.px-10 {
+  margin: 10px;
+}
+
+.px-20 {
+  margin: 20px;
+}
+
+.px-30 {
+  margin: 30px;
+}
+
+.px-40 {
+  margin: 40px;
+}
+
+.relative {
+  position: var(--relative) !important;
+}
+
+.absolute {
+  position: var(--absolute);
+}
+
+.fixed {
+  position: var(--fixed);
+}
+
+.center {
+  justify-content: var(--center);
+  align-items: var(--center);
+  display: var(--flex);
+}
+
+.s-a {
+  justify-content: var(--space-around);
+  align-items: var(--center);
+  display: var(--flex);
+}
+
+.s-b {
+  justify-content: var(--space-between);
+  align-items: var(--center);
+  display: var(--flex);
+}
+
+.f-s {
+  justify-content: var(--flex-start);
+  display: var(--flex);
+}
+.f-e {
+  justify-content: var(--flex-end);
+  align-items: flex-end;
+  display: var(--flex);
+}
+
+.column {
+  flex-direction: var(--column);
+}
+
+.start {
+  justify-content: var(--start);
+}
+
+.top {
+  position: var(--absolute);
+  top: 0;
+}
+
+.nav-top {
+  padding-top: 120px;
+}
+
+.bottom {
+  position: var(--absolute);
+  bottom: 5%;
+}
+
+.middle-x {
+  left: 0;
+  right: 0;
+  margin: auto !important;
+}
+
+.middle-y {
+  top: 0;
+  bottom: 0;
+}
+
+.right {
+  position: var(--absolute);
+  right: 20%;
+}
+
+.index--1 {
+  z-index: -1!important;
+}
+
+.index-1 {
+  z-index: 1!important;
+}
+
+.index-2 {
+  z-index: 2!important;
+}
+
+.index-3 {
+  z-index: 3!important;
+}
+.index-4 {
+  z-index: 4!important;
+}
+.index-5 {
+  z-index: 5!important;
+}
+.index-6 {
+  z-index: 6!important;
+}
+.scroll-y{
+  overflow-y: scroll;
+}
+.hidden {
+  overflow: var(--hidden) !important;
+}
+
+/*--===== CONTENIDO GENERAL =====--*/
+.general-content {
+  width: 100%;
+  height: var(--auto);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: var(--hidden);
+  scroll-snap-align: start;
+  z-index: 5 !important;
+}
+.section-transparent{
+  background: transparent !important;
+}
+.opacity-3{
+  opacity: .3;
+}
+.bg-grid {
+  max-width: 70vw;
+  width: 70vw;
+  height: auto;
+  padding: 16px;
+  margin: var(--auto);
+  border-radius: 48px;
+}
+.border-g{
+  border-radius: 32px;
+}
+
+
+
+.blur{
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.644), transparent);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+}
+.profile-redes {
+  top: calc(50% - 15%);
+  left: 2%;
+}
+
+.profile-redes i {
+  margin: 25px 20px;
+  font-size: 1.3rem;
+}
+
+.profile-redes .redes-piloto {
+  color: rgb(53, 88, 104) !important;
+  color: var(--white) !important;
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+ background: black;
+
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  z-index: 1000;  
+}
+
+.cssbuttons-io-button .icon {
+  background: black;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em white;
+  right: 0.3em;
+  transition: all 0.3s;
+  color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  color: black;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: inline-block;
+  text-wrap: nowrap;
+}
+
+.wrapper .tooltip::before {
+  
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.wrapper .icon:hover .tooltip {
+  display: inline-block;
+  text-wrap: nowrap;
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+
+.wrapper .tooltipicon:hover,
+.wrapper .tooltipicon:hover .tooltip,
+.wrapper .tooltipicon:hover .tooltip::before {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*--===== CONTENIDO GENERAL =====--*/
+
+
+/* ===== RESPONSIVE ===== */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .bg-grid {
+    width: 90% !important;
+  max-width: 90% !important;
+  height: 90% !important;
+    padding: 0;
+    overflow: hidden;
+  }
+  .swapgroup{
+    background: linear-gradient(90deg, orange, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(2px 0px 1px #000000);
+  }
+  .m-top {
+    margin-top: 0;
+  }
+
+  .font-1-7 {
+    font-size: clamp(1.7rem, 5vw, .5rem) !important;
+  }
+
+  .font-3 {
+    font-size: clamp(2rem, 5vw, .5rem) !important;
+  }
+
+  .font-4 {
+    font-size: clamp(2.5rem, 5vw, .5rem) !important;
+  }
+
+  .font-5 {
+    font-size: clamp(5rem, 5vw, .5rem) !important;
+  }
+
+  .font-7 {
+    font-size: clamp(7rem, 5vw, .5rem) !important;
+  }
+
+  .profile-redes {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    top: 0;
+    z-index: 20;
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
